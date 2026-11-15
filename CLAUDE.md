@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The design is implemented. Run `python3 models.py` to run the demo scenario and its asserts. Files:
 
 - `models.py`: the four classes, plus a demo under `if __name__ == "__main__":`.
-- `test_bytebites.py`: pytest behavior tests. Run with `python3 -m pytest` (single test: `python3 -m pytest test_bytebites.py::test_name`).
+- `test_bytebites.py`: pytest behavior tests. Run with `pytest` (single test: `pytest test_bytebites.py::test_name`). Use plain `pytest`, not `python3 -m pytest`: on this machine `python3` resolves to a Homebrew Python without pytest installed.
 
 - `bytebites_spec.md`: the client's feature request (what to build).
 - `ByteBites_Design_Reference.md`: project scope and behavioral instructions (how to build it).
